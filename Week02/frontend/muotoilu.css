@@ -1,0 +1,20 @@
+@import url("https://use.typekit.net/yup4bjk.css");
+
+body{
+    font-family: neue-haas-unica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-family: neue-haas-unica, arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.tekstilaatikko{
+    margin: auto;
+    max-width: 50%;
+    text-align: center;
+}
