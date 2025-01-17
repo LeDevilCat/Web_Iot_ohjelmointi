@@ -5,6 +5,12 @@ body{
     font-family: neue-haas-unica, arial, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header{
@@ -19,7 +25,7 @@ nav{
 }
 
 main{
-    background-color: antiquewhite;
+    background-color: #1a0030;
 
 }
 
@@ -27,38 +33,57 @@ footer{
     background-color: yellow;
 
 }
-h1,  h2{
+h1,  h2, h3{
     font-family: neue-haas-unica, arial, sans-serif;
     font-weight: 500;
     font-style: normal;
     text-align: center;
 }
 
-.LogoGROUP{
+.Skill-Info{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+    height: 85vh;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-.LogoCOLUMN{
+.Logo-Group{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.LogoBOX{
+.Logo-Column{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.LogoBOX img{
+.Logo-Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 125px;
+    max-height: 125px;
+    border: 5px solid #ffdca5;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.Logo-Box img{
     max-height: 60px;
     width: auto;
+    margin-bottom: 5px;
+    object-fit: contain;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.Logo-Box p{
+    margin: 0;
+    text-align: center;
+}
