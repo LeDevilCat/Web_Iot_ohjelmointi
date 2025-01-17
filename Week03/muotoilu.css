@@ -6,6 +6,7 @@ body{
     font-weight: 400;
     font-style: normal;
     color: white;
+    background-color: #1a0030;
 }
 * {
     margin: 0;
@@ -14,19 +15,50 @@ body{
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: red;
     text-align: center;
+    height: 100vh;
+}
+header h1{
+    font-size: 100px;
+    margin: 0;
+}
 
+header h2{
+    font-size: 50px;
+    margin: 0;
 }
 
 nav{
-    background-color: blue;
+    background-color: #cf286f;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
 
+nav a{
+    color: #ffdca5;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #cf286f;
+}
+nav a:hover{
+    background-color: #ffdca5;
+    color: #cf286f;
+    transition-duration: 0.33s;
 }
 
 main{
-    background-color: #1a0030;
-
+    max-width: 85%;
+    margin: auto;
 }
 
 footer{
@@ -40,14 +72,73 @@ h1,  h2, h3{
     text-align: center;
 }
 
+h3{
+    font-size: 200%;
+}
+
+.profile p, .Skill-Description p{
+    font-family: neue-haas-unica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 125%;
+    text-align: justify;
+}
+
+/*
+.profile, .Skill-Info{
+    position: ;
+}
+*/
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    max-width: inherit;
+}
+
+.profile img{
+    max-height: 500px;
+    width: auto;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.profile div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .Skill-Info{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 0 0 20px 0;
-    height: 85vh;
+    height: 100vh;
     align-items: center;
     box-sizing: border-box;
+}
+
+.Skill-Info h3{
+    margin-bottom: 20px;
+}
+.Skill-Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    margin: auto;
+}
+
+.Skill-Description img{
+    max-height: 250px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .Logo-Group{
@@ -87,3 +178,5 @@ h1,  h2, h3{
     margin: 0;
     text-align: center;
 }
+
+
