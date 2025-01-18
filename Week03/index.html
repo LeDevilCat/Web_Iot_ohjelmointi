@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jyri Nieminen | Insinööriopiskelija</title>
     <link rel="stylesheet" href="muotoilu.css">
+    <script src="https://kit.fontawesome.com/d7d379a968.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Jyri Nieminen</h1>
-        <h2>Insinööriopiskelija | Tietotekniikka</h2>
-    </header>
-    <nav>
-        <a href="">Ammattikoulu</a><a href="">Ammattikorkeakoulu</a><a href="">Piirrokset</a>
+    <nav id="navbar">
+        <a href="#profile">Ammattikoulu</a>
+        <a href="#skill-info">Ammattikorkeakoulu</a>
+        <a href="#contacting">Piirrokset</a>
     </nav>
     <main>
-        <div class="profile">
+        <header>
+            <h1>Jyri Nieminen</h1>
+            <h2>Insinööriopiskelija | Tietotekniikka</h2>
+        </header>
+        <section id="profile" class="profile">
             <img src="jyri_nieminen_2024.jpg" alt="Jyri Nieminen">
             <div>
                 <p>Olen 20-vuotias tamperelainen tietotekniikan insinööriopiskelija, jolla on vahva teknologinen osaaminen ja tausta visuaalisessa suunnittelussa. Ammattikorkeakouluopinnoissani olen keskittynyt syventämään ICT-osaamistani, ja aiemmat media-alan opintoni ovat kehittäneet luovia taitojani sekä teknistä osaamistani monipuolisilla työkaluilla.</p>
                 <p>Minulla on kokemusta eri alustoista ja järjestelmistä, joita käytän tehokkaasti niin suunnittelussa kuin teknisessä toteutuksessa. Vapaa-ajallani harrastan piirtämistä ja videopelien pelaamista, jotka tukevat analyyttistä ja innovatiivista lähestymistapaani. Löydät tarkemman katsauksen osaamisestani seuraavilta sivuilta.</p>
             </div>
-        </div>
-        <div class="Skill-Info">
+        </section>
+        <section id="skill-info" class="Skill-Info">
             <div class="Skill-Description">
                 <img src="PLACEHOLDER_no_image.svg" alt="">
                 <h3>ICT-Osaaminen</h3>
@@ -64,20 +67,21 @@
                 <div class="Logo-Column">
                     <div class="Logo-Box">
                         <img src="LOGO/Logo-GIT.svg" alt="GIT-logo">
-                        <p>GIT</p>
+                        <p>HTML</p>
                     </div>
                     <div class="Logo-Box">
-                        <img src="PLACEHOLDER_no_image.svg" alt="HTML-logo">
+                        <img src="PLACEHOLDER_no_image.svg" alt="CSS-logo">
                         <p>Placeholder</p>
                     </div>
                     <div class="Logo-Box">
-                        <img src="PLACEHOLDER_no_image.svg" alt="HTML-logo">
+                        <img src="PLACEHOLDER_no_image.svg" alt="CSS-logo">
                         <p>Placeholder</p>
                     </div>
                 </div>
+
             </div>
-        </div>
-        <div class="Skill-Info">
+        </section>
+        <section id="Skill-Info" class="Skill-Info">
             <div class="Skill-Description">
                 <img src="PLACEHOLDER_no_image.svg" alt="">
                 <h3>Media-Osaaminen</h3>
@@ -119,8 +123,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="Skill-Info">
+        </section>
+        <section id="Skill-Info" class="Skill-Info">
             <div class="Skill-Description">
                 <img src="PLACEHOLDER_no_image.svg" alt="">
                 <h3>Muu Osaaminen</h3>
@@ -174,10 +178,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="contacting" class="contacting">
+            <h3>Yhteydenotto</h3>
+            <p>Olen kiinnostunut uusista projekteista ja mahdollisuuksista, joten ota rohkeasti yhteyttä, jos tarvitset apua tai haluat keskustella yhteistyöstä. Voit lähettää minulle sähköpostia, soittaa tai ottaa yhteyttä sosiaalisen median kautta. Vastaan viesteihin mahdollisimman pian ja teen parhaani auttaakseni sinua.</p>
+            <footer>
+                <div class="footer-links">
+                    <a href="https://github.com/niejyr"><span class="fa-brands fa-square-github"></span></a>
+                    <a href="mailto:nieminen.jyri.j@gmail.com"><span class="fa-solid fa-envelope"></span></a>
+                    <a href="https://www.linkedin.com/in/jyri-nieminen/"><span class="fa-brands fa-linkedin"></span></a>
+                </div>
+                <p>Jyri Nieminen ©2025</p>
+            </footer>
+        </section>
     </main>
-    <footer>
-        <p>moi</p>
-    </footer>
+    <script src="Script.js"></script>
 </body>
 </html>
