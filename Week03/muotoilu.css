@@ -60,7 +60,7 @@ header, .profile, .Skill-Info, .contacting {
     display: flex;
     justify-content: space-evenly;
     overflow: hidden;
-    position: fixed; /* Change to fixed */
+    position: fixed;
     top: 0;
     width: 100%;
     background-image: url("TAUSTA/1920x1080_\(blue\)_wallpaper.jpg");
@@ -68,8 +68,8 @@ header, .profile, .Skill-Info, .contacting {
     box-shadow: 0 4px 4px rgba(0,0,0,0.3);
     visibility: hidden; /* Initially hidden */
     opacity: 0; /* Initially transparent */
-    transition: visibility 0s, opacity 0.5s linear; /* Smooth transition */
-    z-index: 1000; /* Ensure it is above other content */
+    transition: visibility 0s, opacity 0.5s ease; /* Ensure smooth transition */
+    z-index: 1000; /* Keep it above other content */
 }
 
 #navbar.visible {
@@ -110,10 +110,10 @@ footer {
     background-image: url("TAUSTA/1920x1080_\(black\)_wallpaper.jpg");
     background-position: bottom;
     background-size: cover;
-    color: #fff; 
+    color: #fff;
     visibility: hidden; /* Initially hidden */
     opacity: 0; /* Initially transparent */
-    transition: visibility 0s, opacity 0.5s linear; /* Smooth transition */
+    transition: visibility 0s, opacity 0.5s ease; /* Smooth transition */
 }
 
 footer.visible {
@@ -157,7 +157,7 @@ h3 {
     font-size: 200%;
 }
 
-.profile p, .Skill-Description p {
+.profile p, .Skill-Description p, .contacting p {
     font-family: neue-haas-unica, arial, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -262,6 +262,11 @@ h3 {
 .Logo-Box p {
     margin: 0;
     text-align: center;
+}
+
+.contacting {
+    max-width: 40%;
+    margin: auto;
 }
 
 /* Adjust layout for narrower windows */

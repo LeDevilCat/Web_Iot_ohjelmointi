@@ -1,20 +1,35 @@
-document.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    const navbar = document.getElementById('navbar');
-    const footer = document.querySelector('footer');
-    const contactingSection = document.getElementById('contacting');
-    const headerBottom = header.getBoundingClientRect().bottom;
-    const contactingTop = contactingSection.getBoundingClientRect().top;
+// Select the navbar and footer elements
+const navbar = document.getElementById('navbar');
+const footer = document.querySelector('footer');
+const contactingSection = document.getElementById('contacting');
 
-    if (headerBottom <= 0) {
+// Function to handle navbar visibility
+function handleNavbarVisibility() {
+    const headerHeight = document.querySelector('header').offsetHeight;
+
+    if (window.scrollY > headerHeight) {
         navbar.classList.add('visible');
     } else {
         navbar.classList.remove('visible');
     }
+}
 
-    if (contactingTop <= window.innerHeight) {
+// Function to handle footer visibility
+function handleFooterVisibility() {
+    const contactingRect = contactingSection.getBoundingClientRect();
+
+    if (
+        contactingRect.top <= window.innerHeight &&
+        contactingRect.bottom >= 0
+    ) {
         footer.classList.add('visible');
     } else {
         footer.classList.remove('visible');
     }
+}
+
+// Add event listener for scrolling
+window.addEventListener('scroll', () => {
+    handleNavbarVisibility();
+    handleFooterVisibility();
 });
