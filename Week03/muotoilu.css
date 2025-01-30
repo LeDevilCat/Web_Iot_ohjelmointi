@@ -12,7 +12,7 @@ body {
     font-style: normal;
     color: white;
     background-color: #1a0030;
-    background-image: url("TAUSTA/4K-Wallpaper.jpg");
+    background-image: url("../KUVAT/TAUSTA/4K-Wallpaper.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -30,10 +30,13 @@ header {
     align-items: center;
     text-align: center;
     height: 100vh;
-    background: url(TAUSTA/1920x1080_\(blue\)_wallpaper.jpg) hsla(360 0% 0% / 0.5);
+    background: url(../KUVAT/TAUSTA/1920x1080_\(blue\)_wallpaper.jpg) hsla(360 0% 0% / 0.5);
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
+    /* sticky attempt -ed */
+    top: 0;
+    position: sticky;
 }
 
 header h1 {
@@ -63,7 +66,7 @@ header, .profile, .Skill-Info, .contacting {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: url("TAUSTA/1920x1080_\(blue\)_wallpaper.jpg");
+    background-image: url("../KUVAT/TAUSTA/1920x1080_\(blue\)_wallpaper.jpg");
     background-size: cover;
     box-shadow: 0 4px 4px rgba(0,0,0,0.3);
     visibility: hidden; /* Initially hidden */
@@ -107,7 +110,7 @@ footer {
     justify-content: center;
     padding: 20px;
     background-color: #333;
-    background-image: url("TAUSTA/1920x1080_\(black\)_wallpaper.jpg");
+    background-image: url("../KUVAT/TAUSTA/1920x1080_\(black\)_wallpaper.jpg");
     background-position: bottom;
     background-size: cover;
     color: #fff;
