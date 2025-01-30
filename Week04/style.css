@@ -1,0 +1,19 @@
+@import url("https://use.typekit.net/yup4bjk.css");
+
+
+body {
+    font-family: neue-haas-unica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #27221f;
+    background-color: antiquewhite;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1, h2, h3{
+    color: #014421;
+}
+main{
+    max-width: 75%;
+    margin: auto;
+}
