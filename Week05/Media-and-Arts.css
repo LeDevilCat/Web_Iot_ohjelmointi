@@ -1,0 +1,109 @@
+@import url("https://use.typekit.net/yup4bjk.css");
+
+
+body {
+    font-family: neue-haas-unica, arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: #1a0030;
+    background-image: url("TAUSTA/4K-Wallpaper.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0; 
+}
+
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-bottom: 2px solid #ffdca5;
+}
+
+h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 1.5rem; /* Spacing between items */
+    padding: 1rem;
+}
+
+/* Näytöille, joiden leveys on alle 800px: 3 saraketta */
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Näytöille, joiden leveys on alle 500px: 2 saraketta */
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.gallery-item {
+    border: 2px solid #ffdca5;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item h2 {
+    margin: 0.5rem 0;
+}
+
+.gallery-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*modal image*/
+.modal-content {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 5px;
+}
+
+/*modal close button*/
+.close{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*caption*/
+#caption {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+}
